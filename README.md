@@ -55,7 +55,8 @@ git clone https://github.com/Themby2000/simple_shell.git
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
 > Step 4: Run the shell ./hsh
-> important EXITING the shell:
+
+> Important EXITING the shell:
 >> 1: Type the command "exit"
 ```
 Exit
