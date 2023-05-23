@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * _putchar - prints one character at a time to the stdout
