@@ -17,6 +17,7 @@ void _puts(char *str);
 int _strlen(char *s);
 char *_strdup(char *str);
 char *concat_all(char *name, char *sep, char *value);
+int prompt(char **env);
 
 char **splitstring(char *str, const char *delim);
 void execute(char **argv);
