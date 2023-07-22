@@ -44,15 +44,15 @@ list_path *linkpath(char *path);
 char *_which(char *filename, list_path *head);
 
 /**
- * struct mybuild - pointer to function with corresponding buildin command
+ * struct buildD - pointer to function with corresponding buildin command
  * @name: buildin command
  * @func: execute the buildin command
  */
-typedef struct mybuild
+typedef struct buildD
 {
 	char *name;
 	void (*func)(char **);
-} mybuild;
+} buildD;
 
 void(*chkbuild(char **arr))(char **arr);
 int _atoi(char *s);
