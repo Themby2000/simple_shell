@@ -63,6 +63,8 @@ void _unsetenv(char **arr);
 
 void freearr(char **arr);
 void free_list(list_path *ogP);
-
+void sig_handler(int sig_num);
+void _EOF(int len, char *buff);
+void _isatty(void);
 
 #endif
