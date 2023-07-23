@@ -5,7 +5,7 @@
 Simple Shell is a simplified UNIX command interpreter
 ---
 
-##Requirements
+## Requirements
 ---
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -21,37 +21,37 @@ Write a README with the description of your project
 
 List of allowed functions and system calls
 
-`access` (man 2 access)
-`chdir` (man 2 chdir)
-`close` (man 2 close)
-`closedir` (man 3 closedir)
-`execve` (man 2 execve)
-`exit` (man 3 exit)
-`_exit` (man 2 _exit)
-`fflush` (man 3 fflush)
-`fork` (man 2 fork)
-`free` (man 3 free)
-`getcwd` (man 3 getcwd)
-`getline` (man 3 getline)
-`getpid` (man 2 getpid)
-`isatty` (man 3 isatty)
-`kill` (man 2 kill)
-`malloc` (man 3 malloc)
-`open` (man 2 open)
-`opendir` (man 3 opendir)
-`perror` (man 3 perror)
-`read` (man 2 read)
-`readdir` (man 3 readdir)
-`signal` (man 2 signal)
-`stat` (__xstat) (man 2 stat)
-`lstat` (__lxstat) (man 2 lstat)
-`fstat` (__fxstat) (man 2 fstat)
-`strtok` (man 3 strtok)
-`wait` (man 2 wait)
-`waitpid` (man 2 waitpid)
-`wait3` (man 2 wait3)
-`wait4` (man 2 wait4)
-`write` (man 2 write)
+1. `access` (man 2 access)
+2. `chdir` (man 2 chdir)
+3. `close` (man 2 close)
+1. `closedir` (man 3 closedir)
+1. `execve` (man 2 execve)
+1. `exit` (man 3 exit)
+1. `_exit` (man 2 _exit)
+1. `fflush` (man 3 fflush)
+1. `fork` (man 2 fork)
+1. `free` (man 3 free)
+1. `getcwd` (man 3 getcwd)
+1. `getline` (man 3 getline)
+1. `getpid` (man 2 getpid)
+1. `isatty` (man 3 isatty)
+1. `kill` (man 2 kill)
+1. `malloc` (man 3 malloc)
+1. `open` (man 2 open)
+1. `opendir` (man 3 opendir)
+1. `perror` (man 3 perror)
+1. `read` (man 2 read)
+1. `readdir` (man 3 readdir)
+1. `signal` (man 2 signal)
+1. `stat` (__xstat) (man 2 stat)
+1. `lstat` (__lxstat) (man 2 lstat)
+1. `fstat` (__fxstat) (man 2 fstat)
+1. `strtok` (man 3 strtok)
+1. `wait` (man 2 wait)
+1. `waitpid` (man 2 waitpid)
+1. `wait3` (man 2 wait3)
+1. `wait4` (man 2 wait4)
+1. `write` (man 2 write)
 
 ## Compilation
 	gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
