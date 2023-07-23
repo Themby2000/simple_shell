@@ -35,3 +35,4 @@ char *_getenv(const char *n_gbvar)
 		}
 		return (0);
 	}
+}
