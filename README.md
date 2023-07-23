@@ -1,5 +1,4 @@
 # SIMPLE SHELL
-***
 ## ABOUT
 ---
 Simple Shell is a simplified UNIX command interpreter
