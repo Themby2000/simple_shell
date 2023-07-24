@@ -41,8 +41,7 @@ typedef struct list_path
 char *_getenv(const char *name);
 list_path *new_node(list_path **ogP, char *str);
 list_path *linkpath(char *path);
-char *_which(char *filename, list_path *ogP);
-
+char *_which(char *filen_gbvar, list_path *ogP);
 /**
  * struct buildD - pointer to function with corresponding buildin command
  * @name: buildin command
