@@ -28,10 +28,9 @@ list_path *new_node(list_path **ogP, char *str)
 	else
 	{
 	tmp = *ogP;
-
- 	while (tmp->p)
+	while (tmp->p)
 	{
-	tmp = tmp->p;;
+	tmp = tmp->p;
 	}
 	tmp->p = new;
 	}
