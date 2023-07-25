@@ -6,15 +6,14 @@
  */
 void free_list(list_path *ogP)
 {
-        list_path *storage;
+	list_path *storage;
 
-        while (ogP)
-        {
-                storage = ogP->p;
-                free(ogP->dir);
-                free(ogP);
-                ogP = storage;
-        }
+	while (ogP)
+	{
+		storage = ogP->p;
+		free(ogP->dir);
+		free(ogP);
+		ogP = storage;
+	}
 
 }
-

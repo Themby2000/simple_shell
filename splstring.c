@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * splitstring: splits a string and makes it an array of pointers to words.
+ * splitstring - takes a string and splits into an array of pointers to words
  * @str: the string to be split
  * @dlim: the dlimiter
  * Return: array of pointers to words
