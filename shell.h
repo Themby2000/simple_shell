@@ -2,15 +2,19 @@
 #define _SHELL_H_
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
-#include <string.h>
-#include <sys/wait.h>
+#include <stdlib.h>
 #include <sys/types.h>
-#include <errno.h>
-#include <stddef.h>
+#include <sys/wait.h>
 #include <sys/stat.h>
+#include <errno.h>
+#include <fcntl.h>
 #include <signal.h>
+#include <limits.h>
+
+#define BUFSIZE 1024
+#define TOK_BUFSIZE 128
+#define TOK_DELIM " \t\r\n\a"
 
 int _putchar(char c);
 void _puts(char *str);
@@ -25,6 +29,27 @@ void *_realloc(void *prvptr, unsigned int oldsz, unsigned int newsz);
 
 /* Points to an array of pointers to strings called the "environment" */
 extern char **environ;
+
+/**
+ * struct data - struct that contains all relevant data on runtime
+ * @av: argument vector
+ * @input: command line written by the user
+ * @args: tokens of the command line
+ * @status: last status of the shell
+ * @counter: lines counter
+ * @_environ: environment variable
+ * @pid: process ID of the shell
+ */
+typedef struct data
+{
+	char **av;
+	char *input;
+	char **args;
+	int status;
+	int counter;
+	char **_environ;
+	char *pid;
+} data_shell;
 
 /**
  * struct list_path - Linked list containing PATH directories
@@ -55,10 +80,13 @@ typedef struct buildD
 
 void(*chkbuild(char **arr))(char **arr);
 int _atoi(char *s);
-void exitz(char **arr);
 void env(char **arr);
 void _setenv(char **arr);
 void _unsetenv(char **arr);
+char *aux_itoa(int n);
+void get_sigint(int sig);
+void shell_loop(data_shell *datash);
+
 
 void freearr(char **arr);
 void free_list(list_path *ogP);

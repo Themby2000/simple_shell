@@ -9,7 +9,6 @@ void(*chkbuild(char **arr))(char **arr)
 {
 	int i, q;
 	buildD T[] = {
-		{"exit", exitz},
 		{"env", env},
 		{"setenv", _setenv},
 		{"unsetenv", _unsetenv},
