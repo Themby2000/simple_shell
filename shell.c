@@ -24,7 +24,7 @@ int main(void)
 			execute(arr);
 		else
 		{
-			value = _getenv("PATH");
+			value = _getenv("ROOT");
 			ogP = linkpath(value);
 			pathname = _which(arr[0], ogP);
 			f = chkbuild(arr);
