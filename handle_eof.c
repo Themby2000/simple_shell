@@ -1,29 +1,14 @@
-#include "shell.h"
-/**
-* _EOF - handles the End of File
-* @len: return value of getline function
-* @buff: buffer
- */
-void _EOF(int len, char *buff)
-{
-	(void)buff;
-	if (len == -1)
-	{
-	if (isatty(STDIN_FILENO))
-	{
-	_puts("\n");
-	free(buff);
-	}
-	exit(0);
-	}
-}
+#include "simple.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-/**
-  * _isatty - verif if terminal
-  */
-
-void _isatty(void)
+void handle_eof(data_shell *datash)
 {
-	if (isatty(STDIN_FILENO))
-	_puts("#themkol$ ");
+	if (datash->interactive)
+	{
+		printf("\n");
+		printf("#cisfun$ ");
+		fflush(stdout);
+	}
+	datash->in_shell = false;
 }
